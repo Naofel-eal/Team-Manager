@@ -1,0 +1,6 @@
+[submodule "Team-Manager-API"]
+	path = Team-Manager-API
+	url = https://github.com/Naofel-eal/Team-Manager-API
+[submodule "Team-Manager-IHM"]
+	path = Team-Manager-IHM
+	url = https://github.com/Naofel-eal/Team-Manager-IHM
