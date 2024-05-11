@@ -1,0 +1,22 @@
+version: '3.8'
+services:
+  frontend:
+    image: naofeleal/team_manager_ihm:latest
+    ports:
+      - "80:80"
+    depends_on:
+      - backend
+
+  backend:
+    image: naofeleal/team_manager_api:latest
+    ports:
+      - "8080:8080"
+    env_file:
+      - .env
+    depends_on:
+      - db
+
+  db:
+    image: naofeleal/team_manager_db:latest
+    ports:
+      - "5432:5432"
